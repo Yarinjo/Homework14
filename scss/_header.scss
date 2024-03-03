@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24rem;
+
+    @include mobile {
+        display: block;
+    }
+
+    &__name {
+        display: flex;
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        color: var(--blanco);
+        @include mobile {
+            font-weight: 500;
+            font-size: 20rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 23rem;
+        align-items: flex-end;
+    }
+
+    &__navLink {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16rem;
+        line-height: 100%;
+        color: var(--blanco);
+        transition: 0.2s all ease-in-out;
+
+        
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:hover::before {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -8rem;
+            height: 3rem;
+            transition: 0.2 all ease-in-out;
+            background: var(--primario);;
+        }
+        @include mobile {
+            margin-inline: auto;
+            font-weight: 500;
+            font-size: 18rem;
+            margin-top: 20rem;
+        }
+
+        
+    }
+
+    &__actualLink {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -8rem;
+            height: 3rem;
+            transition: 0.2 all ease-in-out;
+            background: var(--primario);;
+        }
+    }
+
+}
+

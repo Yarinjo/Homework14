@@ -1,0 +1,96 @@
+.footer {
+    display: flex;
+    gap: 129rem;
+    border-bottom: 1px solid var(--bordes);
+    border-top: 1px solid var(--bordes);
+    margin-left: -20rem;
+    margin-right: -20rem;
+    padding-top: 32rem;
+    padding-bottom: 64rem;
+
+    @include mobile {
+        gap: 20rem;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 24rem;
+    }
+
+
+    &__name {
+
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 24rem;
+        line-height: 133%;
+        color: var(--blanco);
+
+        @include mobile {
+            font-weight: 500;
+            font-size: 20rem;
+        }
+
+    }
+
+    &__link {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14rem;
+        line-height: 143%;
+        letter-spacing: 0.02em;
+        color: var(--blanco);
+        a {
+            color: var(--blanco);
+        }
+
+        @include mobile {
+            font-weight: 300;
+            font-size: 22rem;
+        }
+
+    }
+
+    &__topLinks {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16rem;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: var(--acento);
+
+        @include mobile {
+            font-weight: 300;
+            font-size: 12rem;
+        }
+
+        a {
+            color: var(--acento);
+        }
+    }
+
+    &__socials {
+        @include mobile {
+        max-width: 40rem;
+        }
+    }
+}
+
+
+//.containerForBorderAndMargins {
+//
+//}
+
+.lastFooter {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    color: var(--blanco);
+
+    padding-top: 16rem;
+    padding-bottom: 50rem;
+    margin-left: -20rem;
+}
